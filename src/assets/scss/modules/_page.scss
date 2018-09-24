@@ -1,25 +1,33 @@
 //only for styles
+.page {
+    padding: 0 5px;
+    box-sizing: border-box;
+}
 .row {
-    background: #ccc;
+    background: #7071A8;
 
     .row {
         background: none;
     }
 }
 
+.container {
+    margin-bottom: 40px;
+}
+
 //custom col styles
 [class^="col"] {
-    background: #eee;
-    border: 1px solid #000;
+    background: #D0D0E7;
+    border: 1px solid #333577;
 
     text-align: center;
-
-    & [class^="col"] {
-        background: darken(#eee, 20%);
-    }
 }
 
 //basic box
 .box {
     padding: 2rem;
+    margin-bottom: 40px;
+    background: #E2E2E2;
+    border-radius: 5px;
+    border: 1px solid #7778A7;
 }
