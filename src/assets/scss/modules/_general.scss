@@ -1,0 +1,50 @@
+/*general*/
+body, html {
+	font:16px/24px Arial, Helvetica, sans-serif;
+	height:100%;
+	background:#fff;
+	color: #000;
+	min-width: 1180px;
+}
+select, input, textarea {
+	outline:none;
+}
+
+a {
+	color:inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.page {
+	position:relative;
+	overflow:hidden;
+	min-height:100%;
+}
+
+p {
+	margin: 0 0 28px;
+}
+
+//content
+.wrapper {
+	max-width: 1180px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: $tablet) {
+  body,html {
+		min-width: 768px;
+	}
+
+}
+
+@media screen and (max-width: $mobile) {
+	body,html {
+		min-width: 320px;
+	}
+}

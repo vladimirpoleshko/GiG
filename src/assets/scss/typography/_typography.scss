@@ -1,0 +1,61 @@
+:root {
+    font-size: 16px;
+}
+
+//headings
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    margin: 0 0 1.5rem;
+}
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.375rem;
+}
+
+h4 {
+    font-size: 1.125rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.875rem;
+}
+
+.title {
+    display: block;
+    font-size: 1.125rem;
+    padding: 0 0 1rem;
+}
+
+//text
+p {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.font-light {
+    font-weight: 200;
+}
+
+.font-regular {
+    font-weight: 400;
+}
+
+.font-bold {
+    font-weight: 600;
+}
+
+.font-black {
+    font-weight: 800;
+}

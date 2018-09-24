@@ -1,0 +1,85 @@
+{% include "partials/_head.html" %}
+
+<div class="page">
+  {% include "partials/_header.html" %}
+  <div class="container">
+    <div class="row">
+      <div class="col-1">
+        1
+      </div>
+      <div class="col-2 col-6-m">
+        2 but 6 in mobile
+      </div>
+      <div class="col-3 col-6-m">
+        3 but 6 in mobile
+      </div>
+      <div class="col-6">
+        6
+      </div>
+    </div><!-- / row -->
+    <div class="row">
+      <div class="col-3 col-6-m offset-6-m">
+        3 but 6 in mobile with 6 offset
+      </div>
+      <div class="col-3">
+        3
+      </div>
+      <div class="col-3">
+        3
+      </div>
+      <div class="col-3">
+        3
+      </div>
+    </div><!-- / row -->
+    <div class="row">
+      <div class="col-4 col-12-sm">
+        4
+      </div>
+      <div class="col-4">
+        4
+      </div>
+      <div class="col-4">
+        4
+      </div>
+    </div><!-- / row -->
+    <div class="row">
+      <div class="col-8">
+        <div class="col-6">
+          8 / 2
+        </div>
+        <div class="col-6">
+          8 / 2
+        </div>
+      </div>
+      <div class="col-4">
+        4
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        4
+      </div>
+      <div class="col-4 offset-4">
+        4 with 4 offset
+      </div>
+    </div><!-- / row -->
+    <div class="row">
+      <div class="col-6 offset-6">
+        6 with 6 offset
+      </div>
+    </div><!-- / row -->
+  </div><!-- / container -->
+  <div class="box">
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <strong class="title">Content Title</strong>
+    <strong class="sub-title">Sub title</strong>
+  </div>
+  {% include "partials/_footer.html" %}
+</div><!-- / page -->
+</body>
+</html>

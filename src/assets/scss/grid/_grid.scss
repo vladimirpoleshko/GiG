@@ -1,0 +1,217 @@
+// grid
+
+//we can set default gutter here
+$width: 100%;
+$gutter: 0;
+
+//mobile helper
+.mobile-hidden {
+    display: none;
+}
+
+//basic container
+.container {
+  width: $width;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+[class^="col"] {
+    float: left;
+    box-sizing: border-box;
+    margin: 0 ($gutter / 2);
+}
+
+.col-1 { 
+    width:($width / 12) - ($gutter * 11 / 12); 
+}
+.col-2 { 
+    width: ($width / 6) - ($gutter * 10 / 12); 
+}
+.col-3 { 
+    width: ($width / 4) - ($gutter * 9 / 12); 
+}
+.col-4 { 
+    width: ($width / 3) - ($gutter * 8 / 12); 
+}
+.col-5 { 
+    width: ($width / (12 / 5)) - ($gutter * 7 / 12); 
+}
+.col-6 { 
+    width: ($width / 2) - ($gutter * 6 / 12); 
+}
+.col-7 { 
+    width: ($width / (12 / 7)) - ($gutter * 5 / 12); 
+}
+.col-8 { 
+    width: ($width / (12 / 8)) - ($gutter * 4 / 12); 
+}
+.col-9 { 
+    width: ($width / (12 / 9)) - ($gutter * 3 / 12); 
+}
+.col-10 { 
+    width: ($width / (12 / 10)) - ($gutter * 2 / 12); 
+}
+.col-11 { 
+    width: ($width / (12 / 11)) - ($gutter * 1 / 12); 
+}
+.col-12 { 
+    width: $width; 
+}
+
+//offset
+.offset-1 { 
+    margin-left:($width / 12) - ($gutter * 11 / 12); 
+}
+.offset-2 { 
+    margin-left: ($width / 6) - ($gutter * 10 / 12); }
+
+.offset-3 { 
+    margin-left: ($width / 4) - ($gutter * 9 / 12); 
+}
+.offset-4 { 
+    margin-left: ($width / 3) - ($gutter * 8 / 12); 
+}
+.offset-5 { 
+    margin-left: ($width / (12 / 5)) - ($gutter * 7 / 12); 
+}
+.offset-6 { 
+    margin-left: ($width / 2) - ($gutter * 6 / 12); 
+}
+.offset-7 { 
+    margin-left: ($width / (12 / 7)) - ($gutter * 5 / 12); 
+}
+.offset-8 { 
+    margin-left: ($width / (12 / 8)) - ($gutter * 4 / 12); 
+}
+.offset-9 { 
+    margin-left: ($width / (12 / 9)) - ($gutter * 3 / 12); 
+}
+.offset-10 { 
+    margin-left: ($width / (12 / 10)) - ($gutter * 2 / 12); 
+}
+.offset-11 { 
+    margin-left: ($width / (12 / 11)) - ($gutter * 1 / 12); 
+}
+
+@media screen and (max-width: $mobile) {
+    .col-1,
+    .col-2,
+    .col-3,
+    .col-4,
+    .col-5,
+    .col-6,
+    .col-7,
+    .col-8,
+    .col-9,
+    .col-10,
+    .col-11,
+    .col-12 {
+        width: 100%;
+    }
+
+    //mobile-sizes
+    .col-1-m { 
+        width:($width / 12) - ($gutter * 11 / 12); 
+    }
+    .col-2-m { 
+        width: ($width / 6) - ($gutter * 10 / 12); }
+    
+    .col-3-m { 
+        width: ($width / 4) - ($gutter * 9 / 12); 
+    }
+    .col-4-m { 
+        width: ($width / 3) - ($gutter * 8 / 12); 
+    }
+    .col-5-m { 
+        width: ($width / (12 / 5)) - ($gutter * 7 / 12); 
+    }
+    .col-6-m { 
+        width: ($width / 2) - ($gutter * 6 / 12); 
+    }
+    .col-7-m { 
+        width: ($width / (12 / 7)) - ($gutter * 5 / 12); 
+    }
+    .col-8-m { 
+        width: ($width / (12 / 8)) - ($gutter * 4 / 12); 
+    }
+    .col-9-m { 
+        width: ($width / (12 / 9)) - ($gutter * 3 / 12); 
+    }
+    .col-10-m { 
+        width: ($width / (12 / 10)) - ($gutter * 2 / 12); 
+    }
+    .col-11-m { 
+        width: ($width / (12 / 11)) - ($gutter * 1 / 12); 
+    }
+    .col-12-m { 
+        width: $width; 
+    }
+
+    //mobile offsets
+    .offset-1,
+    .offset-2,
+    .offset-3,
+    .offset-4,
+    .offset-5,
+    .offset-6,
+    .offset-7,
+    .offset-8,
+    .offset-9,
+    .offset-10,
+    .offset-11,
+    .offset-12 {
+        margin-left: 0;
+    }
+
+    .offset-1-m { 
+        margin-left:($width / 12) - ($gutter * 11 / 12); 
+    }
+    .offset-2-m { 
+        margin-left: ($width / 6) - ($gutter * 10 / 12); }
+    
+    .offset-3-m { 
+        margin-left: ($width / 4) - ($gutter * 9 / 12); 
+    }
+    .offset-4-m { 
+        margin-left: ($width / 3) - ($gutter * 8 / 12); 
+    }
+    .offset-5-m { 
+        margin-left: ($width / (12 / 5)) - ($gutter * 7 / 12); 
+    }
+    .offset-6-m { 
+        margin-left: ($width / 2) - ($gutter * 6 / 12); 
+    }
+    .offset-7-m { 
+        margin-left: ($width / (12 / 7)) - ($gutter * 5 / 12); 
+    }
+    .offset-8-m { 
+        margin-left: ($width / (12 / 8)) - ($gutter * 4 / 12); 
+    }
+    .offset-9-m { 
+        margin-left: ($width / (12 / 9)) - ($gutter * 3 / 12); 
+    }
+    .offset-10-m { 
+        margin-left: ($width / (12 / 10)) - ($gutter * 2 / 12); 
+    }
+    .offset-11-m { 
+        margin-left: ($width / (12 / 11)) - ($gutter * 1 / 12); 
+    }
+
+    .mobile-hidden {
+        display: block;
+    }
+}

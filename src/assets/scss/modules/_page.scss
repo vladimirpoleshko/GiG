@@ -1,0 +1,25 @@
+//only for styles
+.row {
+    background: #ccc;
+
+    .row {
+        background: none;
+    }
+}
+
+//custom col styles
+[class^="col"] {
+    background: #eee;
+    border: 1px solid #000;
+
+    text-align: center;
+
+    & [class^="col"] {
+        background: darken(#eee, 20%);
+    }
+}
+
+//basic box
+.box {
+    padding: 2rem;
+}
