@@ -127,7 +127,7 @@ gulp.task('sass', function() {
     .on('error', sass.logError))
     .pipe(autoprefixer(autoprefixerOptions))
     .pipe(csscomb())
-    //.pipe(cssnano())
+    .pipe(cssnano())
     .pipe(rename({suffix: '.min'}))
     // .pipe(gulpif(!PRODUCTION, sourcemaps.write('.')))
     .pipe(gulp.dest(dist.cssDir))
