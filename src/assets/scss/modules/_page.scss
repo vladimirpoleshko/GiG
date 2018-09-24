@@ -27,7 +27,15 @@
 .box {
     padding: 2rem;
     margin-bottom: 40px;
-    background: #E2E2E2;
+    background: #eee;
     border-radius: 5px;
     border: 1px solid #7778A7;
+}
+
+.btn-example {
+    padding-bottom: 20px;
+    
+    .g-btn {
+        width: 200px;
+    }
 }
